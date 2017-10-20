@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Sword.ma
-//Last modified: Fri, Oct 20, 2017 06:10:58 PM
+//Last modified: Fri, Oct 20, 2017 03:24:57 PM
 //Codeset: 1252
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -13,18 +13,18 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "87494342-40CF-4743-4C4B-75A29AB2DFAB";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.454267865954316 6.2380148632122356 19.787848546202035 ;
-	setAttr ".r" -type "double3" -366.93835201125665 12245.399999999841 -1.4975311029786412e-16 ;
+	setAttr ".t" -type "double3" 1.8137316749037176 -4.1702856041509291 13.950790824625845 ;
+	setAttr ".r" -type "double3" -360.33835201138731 12244.600000001123 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3C7DA4D0-43F6-BB5A-DF99-A1942400991F";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 22.318468436043609;
+	setAttr ".coi" 13.937623968184687;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0.36048901368496156 2.5023329608454699 -0.0036293531024415432 ;
+	setAttr ".tp" -type "double3" 0.086557067930698395 3.6979458332061768 1.2814998626708984e-06 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "8128DD96-46AE-EAD6-AC6E-1AB82650830B";
@@ -44,13 +44,13 @@ createNode camera -s -n "topShape" -p "top";
 	setAttr ".o" yes;
 createNode transform -s -n "front";
 	rename -uid "077A2A3B-4B5D-5ED3-487B-C397187AAB01";
-	setAttr ".t" -type "double3" 0.13411510875764809 2.3434639780598294 1000.1 ;
+	setAttr ".t" -type "double3" 0.4571113937211202 5.110454851737491 1000.1 ;
 createNode camera -s -n "frontShape" -p "front";
 	rename -uid "DC2F3521-4D0C-DEE7-2ABE-66888D7819ED";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 14.981332005126548;
+	setAttr ".ow" 8.2966293127370712;
 	setAttr ".imn" -type "string" "front";
 	setAttr ".den" -type "string" "front_depth";
 	setAttr ".man" -type "string" "front_mask";
@@ -59,14 +59,14 @@ createNode camera -s -n "frontShape" -p "front";
 createNode transform -s -n "side";
 	rename -uid "BAE76489-4918-FEB1-2238-D6B08C809DAC";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1000.1 1.840899220697561 -0.020723816914594309 ;
+	setAttr ".t" -type "double3" 1000.1 2.3682025967583065 -0.087061983580301067 ;
 	setAttr ".r" -type "double3" 0 89.999999999999986 0 ;
 createNode camera -s -n "sideShape" -p "side";
 	rename -uid "4267C191-4C67-5EF2-7F25-D88844EC74A2";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 23.028355187394375;
+	setAttr ".ow" 1.4584440426337182;
 	setAttr ".imn" -type "string" "side";
 	setAttr ".den" -type "string" "side_depth";
 	setAttr ".man" -type "string" "side_mask";

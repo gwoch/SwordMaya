@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Sword.ma
-//Last modified: Fri, Oct 20, 2017 06:10:58 PM
+//Last modified: Fri, Oct 20, 2017 03:28:08 PM
 //Codeset: 1252
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -13,18 +13,18 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "87494342-40CF-4743-4C4B-75A29AB2DFAB";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.454267865954316 6.2380148632122356 19.787848546202035 ;
-	setAttr ".r" -type "double3" -366.93835201125665 12245.399999999841 -1.4975311029786412e-16 ;
+	setAttr ".t" -type "double3" 1.2073312991800111 3.7971449966581865 5.2225521460797912 ;
+	setAttr ".r" -type "double3" -377.13835201136447 12252.60000000141 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3C7DA4D0-43F6-BB5A-DF99-A1942400991F";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 22.318468436043609;
+	setAttr ".coi" 6.5371033333350272;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0.36048901368496156 2.5023329608454699 -0.0036293531024415432 ;
+	setAttr ".tp" -type "double3" 0.086557067930698395 3.6979458332061768 1.2814998626708984e-06 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "8128DD96-46AE-EAD6-AC6E-1AB82650830B";
